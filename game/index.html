@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>사과 10 만들기 게임</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <header class="header">
+            <div class="score-container">
+                <span class="label">Score</span>
+                <span id="score">0</span>
+            </div>
+            <div class="timer-container">
+                <span class="label">Time</span>
+                <span id="timer">02:00</span>
+            </div>
+            <button id="start-btn" class="btn">Start Game</button>
+        </header>
+
+        <main id="board" class="board blur">
+            <!-- Grid will be generated here -->
+        </main>
+        
+        <div id="game-over-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Game Over!</h2>
+                <p>Your Score: <span id="final-score">0</span></p>
+                <button id="restart-btn" class="btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
